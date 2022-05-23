@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>a</title>
+    <!-- GOOGLE FONTS --- NO FUNCIONA CON MTA -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="nav-bar">
+        <div class="info-nav">
+            <a href="#">Discord</a>
+            <a href="#">Contacto</a>
+            <a href="#">Login creator</a>
+        </div>
+
+        <div class="login-nav">
+            <a href="">Login</a>
+        </div>
+    </div>
+
+    <div id="all-cont">
+        <div class="des-res-cont" data-aos="fade-up">
+            <h1 class="title-res" >¿Aún no te has registrado?</h1>
+            <p class="des-res">Registrate para obtener una cuenta y disfrutar de NEVERSIDE RP</p>
+            <p class="des-log">Si ya tienes cuenta has click en <b>iniciar sesion</b></p>
+            <a href="#all-cont-a" style="color:white ;">Iniciar sesión</a>
+        </div>
+
+        <form class="res-in" data-aos="fade-up">
+            <h1>Registrate</h1>
+            <input type="text" name="" class="username" placeholder="Ingresa nombre de usuario" required>
+            <input type="password" name="" class="pass" placeholder="Ingresa contraseña" required>
+            <input type="submit" value="Registrarse" class="sub-res" style="cursor:pointer;">
+        </form>  
+    </div>
+
+    <div id="all-cont-a">
+        <div class="des-res-cont" data-aos="fade-down">
+            <h1 class="title-res">Bienvenido, inicia sesion para empezar la experiencia</h1>
+            <p class="des-res">Estas en el login de NEVERSIDE RP, ingresa tus creencias para empezar</p>
+            <p class="des-log">Si no cuentas con una cuenta da click en <b style="color:darkorange ;">Registrarse</b></p>
+            <a href="#nav-bar">Registrate</a>
+        </div>
+
+        <form class="res-in" data-aos="fade-down">
+            <h1>Iniciar sesión</h1>
+            <input type="text" name="" class="username" placeholder="Ingresa nombre de usuario" required>
+            <input type="password" name="" class="pass" placeholder="Ingresa contraseña" required>
+            <input type="submit" value="Iniciar sesión" class="sub-res aa" style="cursor:pointer;">
+        </form>  
+    </div>
+    
+    <script src="inde.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

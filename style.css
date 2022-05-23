@@ -1,0 +1,173 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 900;
+    color: white;
+}
+
+body{
+    background-color: rgb(43, 43, 43);
+    overflow: hidden;
+}
+
+#nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+}
+
+.info-nav a{
+    margin: 0 30px;
+    color: white;
+}
+
+.login-nav a{
+    background-color:rgb(29, 29, 29);
+    padding: 10px 20px;
+    box-shadow: 0px 0px 7px darkorange;
+    border-radius: 20px;
+    color: rgb(217, 152, 0);
+    margin: 0 40px 0 0;
+}
+
+#all-cont, #all-cont-a{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px);
+
+    
+}
+
+
+.des-res-cont{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    margin: 0 0 0 50px;
+    
+}
+
+.des-res-cont a{
+    border-radius: 20px;
+    width: 20%;
+    text-align: center;
+    background-color: darkorange;
+    color: white;
+    padding: 10px 15px;
+    transition: .5s ;
+    animation: boton 2s infinite;
+}
+
+
+.title-res{
+    font-size: 50px;
+    color:rgb(191, 119, 2) ;
+    width: 85%;
+}
+
+.des-res{
+    margin: 30px 0 0 0;
+}
+
+.des-log{
+    margin: 0px 0 30px 0
+}
+
+#all-cont a{
+    border-radius: 20px;
+    color: rgb(217, 152, 0);
+    animation: boton 2s infinite;
+}
+
+
+.res-in{
+    margin: 0 auto;
+}
+
+.res-in input{
+    display: block;
+    margin: 20px 0;
+}
+
+.username{
+    background-color:rgb(29, 29, 29) ;
+    padding: 15px 185px 15px 15px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+
+.pass{
+    background-color:rgb(29, 29, 29) ;
+    padding: 15px 185px 15px 15px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+
+.pass::placeholder,.username::placeholder{
+    color: whitesmoke;
+    padding: 15px 185px 15px 0;
+}
+
+.sub-res{
+    background-color:rgb(191, 119, 2) ;
+    padding: 15px 141px;
+    box-shadow: 1px 1px 30px rgb(189, 113, 0);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    z-index: -1;
+    transition: .5s;
+}
+
+.sub-res:hover{
+    box-shadow: 1px 1px 10px rgb(189, 113, 0);
+}
+
+
+.aa{
+    padding: 15px 136.5px; 
+}
+
+
+@keyframes boton{
+    0%{
+        position: relative;
+        top: 0px;
+    }
+
+   50%{
+        position: relative;
+        top: 20px;
+        box-shadow: 5px 5px 1px rgb(168, 93, 0);
+        transform: rotate(2deg);
+    }
+
+    70%{
+        position: relative;
+        top: 20px;
+        box-shadow: 5px 5px 1px rgb(168, 93, 0);
+        transform: rotate(10deg);
+    }
+
+    80%{
+        position: relative;
+        top: 20px;
+        box-shadow: 5px 5px 1px rgb(168, 93, 0);
+        transform: rotate(2deg);
+    }
+
+    100%{
+        position: relative;
+        top: 0px;
+    }
+}
+
